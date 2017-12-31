@@ -23,7 +23,7 @@ function CustomMapType() {}
 
 CustomMapType.prototype.tileSize = new google.maps.Size(1024,1024);
 CustomMapType.prototype.minZoom = 3;
-CustomMapType.prototype.maxZoom = 7;
+CustomMapType.prototype.maxZoom = 8;
 CustomMapType.prototype.getTile = function(coord, zoom, ownerDocument) {
     var div = ownerDocument.createElement('DIV');
     var baseURL = 'Images/';
@@ -104,7 +104,7 @@ function load() {
     var mapOptions = {
         zoom: 3,
         // minZoom: 3,
-        // maxZoom: 7,
+        // maxZoom: 8,
         isPng: false,
         mapTypeControl: false,
         streetViewControl: false,
